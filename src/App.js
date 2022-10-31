@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Slider from './components/Slider';
+import Nav from './components/Nav';
+import Container from './components/Container';
+import CartContainer from './components/CartCntainer';
+import ShopHover from './components/ShopHover';
+import { useStateValue } from './components/StateProvider';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ShopHover/>
+    {/* <Nav/> */}
+    <Slider/>
+    <Container/>
+    <CartContainer/>
     </div>
   );
 }

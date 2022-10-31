@@ -1,0 +1,176 @@
+.nav{
+    /* background-color: black; */
+    height: 12vh;
+    position: sticky;
+    top:0;
+    z-index: 5;
+}
+.nav-top{
+    height: 4vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+.nav .link{
+    text-decoration: none;
+    color: white;
+}
+.nav .link:hover{
+ color: red;
+}
+.nav-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: none;
+}
+.nav-bottom{
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    width: 100%;
+
+}
+.logo-wrap{
+    padding: 20px;
+    width: 700px;
+}
+.logo{
+    max-height: 5vh;
+    width: auto;
+    object-fit: cover;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+}
+.nav-src{
+    height: 6vh;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.src{
+   border-radius: 50px;
+    height: 100%;
+    min-width: 250px;
+    width:100%;
+   /* max-width: 250px; */
+    color: rgb(56, 55, 55);
+    padding: 0 0 0 20px;
+}
+.cart-logowrap{
+    position: relative;
+}
+.cart-count{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:-4px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    pointer-events: none;
+}
+.item{
+    margin:15px;
+    font-size: 1.3em;
+    z-index: 100;
+    position: relative;
+}
+.nav-info{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 130px;
+    width: 100%;
+    
+}
+.nav-border{
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: 0.05s;
+}
+.item:hover > .nav-border{
+    width: 100%;
+    transform-origin: left;
+    
+}
+.login-link{
+    position: relative;
+}
+.login-info{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    left: -80px;
+    top:7vh;
+    background-color: rgb(55, 54, 54);
+    display: none;
+   
+}
+.close-login{
+    position: absolute;
+    right: 10px;
+    top:0;
+
+}
+.login-info button{
+    width: 100px;
+    border-radius: 3px;
+    background-color: red;
+    color: white;
+}
+
+
+
+.src-plc{
+    position: absolute;
+    left:10px;
+    display: flex;
+    align-items: center;
+    color: rgb(55, 54, 54);
+    pointer-events: none;
+}
+.src:active,.src:focus{
+    border:none;
+    outline: none;
+}
+.src:active+.src-plc,.src:focus+.src-plc,.src:valid+.src-plc{
+    display: none;
+}
+.nav-top>p{
+    padding: 0;
+    /* height: 2vh; */
+    margin: 0;
+    
+}
+@media screen and (max-width:1200px) {
+.nav-item{
+    display: none;
+}
+.logo-wrap{
+    width: fit-content;
+}
+.nav-src{
+    width: 100%;
+}
+    
+}

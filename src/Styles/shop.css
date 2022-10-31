@@ -1,0 +1,31 @@
+.shophover{
+    position: absolute;
+    display: none;
+    /* opacity:0; */
+    height: 80vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 4;
+    /* pointer-events: none; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+.shop-img{
+   
+    max-width:350px;
+    width:100%;
+    height: auto;
+    object-fit: contain;
+
+}
+.shopimg{
+    display: none;
+}

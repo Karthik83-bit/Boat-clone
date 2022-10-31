@@ -1,0 +1,46 @@
+.head-img{
+    max-width:100vw;
+    width:100%;
+
+}
+.navpage-wrap-overlay{
+    height:100vh;
+    width:100vw;
+    overflow: hidden;
+    background-color: grey;
+    opacity: 0.5;
+}
+.head-img>img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.product-content{
+    height:20vh;
+    width:100%;
+}
+.product-container{
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtermodal{
+    height:100vh;
+    position: fixed;
+    width:30vw;
+    background-color: red;
+    z-index: 8;
+    left:-30vw;
+}
+.navPage-overlay{
+    position: absolute;
+    opacity: 0.5;
+    height:100vh;
+    width:100vw;
+    /* pointer-events: none; */
+    background-color: grey;
+    z-index: 6;
+    overflow: hidden;
+    display:none;
+}

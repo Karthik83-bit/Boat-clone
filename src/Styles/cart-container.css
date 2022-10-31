@@ -1,0 +1,93 @@
+.cart-wrap{
+    position: absolute;
+    top:0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    background-color: white;
+    z-index: 100;
+    display: none;
+
+}
+.card-header{
+    height: 20%;
+
+}
+.cart-top{
+    background-color: red;
+    font-size: 1.5em;
+}
+.card-down{
+    background-color: black;
+    font-size: 0.5em;
+}
+.cart-header>div{
+    height: 50%;
+}
+.cart-items-wrap{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    overflow-y: scroll;
+
+}
+.cart-items-wrap::-webkit-scrollbar{
+    display: none;
+}
+.cart-items{
+    position: absolute;
+    /* overflow-y: scroll;s */
+    width: 100%;
+}
+.cont-shipping,.cont-total{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+.cod,.bycard{
+    height:8vh;
+    width: 90%;
+    border-radius: 5px;
+    margin: 5px;
+}
+.items-price span{
+
+    margin: 0;
+
+}
+.secnd-row{
+width:100%;
+text-align: center;
+
+}
+.banner{
+    width: 100%;
+    background-color: rgb(182, 199, 199);
+
+}
+.continue{
+    color:red;
+}
+.cart-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 0.3px solid black;
+}
+.cod{
+    background-color: red;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 700;
+    outline:none;
+    border:0;
+}
+.bycard{
+    border:2px solid red;
+    color: red;
+    outline: none;
+}
+.items-price{
+    width: 100%;
+}
